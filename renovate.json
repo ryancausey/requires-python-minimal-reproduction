@@ -1,1 +1,25 @@
-{}
+{
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "description": "Leave the python configuration in pyrpoject.toml as a range.",
+    "extends": [
+        "config:base"
+    ],
+    "rangeStrategy": "pin",
+    "packageRules": [
+        {
+            "matchManagers": [
+                "poetry"
+            ],
+            "matchDepNames": [
+                "python"
+            ],
+            "rangeStrategy": "replace"
+        },
+        {
+            "matchDepNames": [
+                "requires-python"
+            ],
+            "rangeStrategy": "replace"
+        }
+    ]
+}
