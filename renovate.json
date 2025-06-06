@@ -16,7 +16,7 @@
             "rangeStrategy": "replace"
         },
         {
-            "matchDepNames": [
+            "matchDepTypes": [
                 "requires-python"
             ],
             "rangeStrategy": "replace"
